@@ -1,0 +1,14 @@
+services:
+  php-fpm:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - DOCKER_PHP_VERSION=${DOCKER_PHP_VERSION}
+        - DOCKER_PHP_DATE_TIMEZONE=${DOCKER_PHP_DATE_TIMEZONE}
+        - DOCKER_USER_NAME=${DOCKER_USER_NAME}
+        - DOCKER_USER_GROUP=${DOCKER_USER_GROUP}
+        - DOCKER_UID=${DOCKER_UID}
+        - DOCKER_GID=${DOCKER_GID}
+    expose:
+      - 9000
