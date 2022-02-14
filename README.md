@@ -2,12 +2,12 @@
 
 We need docker installed.
 
-The just 
+Then just run:
 ```bash
 docker compose build
 ```
 
-And finally:
+And finally run:
 ```bash
 docker compose run php-fpm
 ```
